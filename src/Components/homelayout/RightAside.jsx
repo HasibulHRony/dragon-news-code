@@ -1,7 +1,10 @@
 import React from 'react'
+import { SocialLogin } from './SocialLogin'
 
 export const RightAside = () => {
   return (
-    <div>RightAside</div>
+    <div>
+        <SocialLogin></SocialLogin>
+    </div>
   )
 }
