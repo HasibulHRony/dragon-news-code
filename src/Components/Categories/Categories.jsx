@@ -6,7 +6,7 @@ export const Categories = () => {
     return (
         <div>
             <h2 className='font-bold'>All categories ({categories.length})</h2>
-            <div className='grid grid-cols-1 mt-5'>
+            <div className='grid grid-cols-1 mt-5 gap-3'>
                 {
                     categories.map(category => <NavLink className={"btn bg-base-100 border-0 hover:bg-base-200 font-semibold"} key={category.id} to={`/category/${category.id}`}>{category.name}</NavLink>)
                 }
