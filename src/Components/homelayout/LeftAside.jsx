@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Categories } from '../Categories/Categories'
 
 export const LeftAside = () => {
-  return (
-    <div>
-        <Categories></Categories>
-    </div>
-  )
+    return (
+        <div>
+            <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+                <Categories></Categories>
+            </Suspense>
+        </div>
+    )
 }
